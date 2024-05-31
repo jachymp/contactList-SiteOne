@@ -1,0 +1,6 @@
+spusteni projektu
+
+1. docker-compose up --build -d
+2. ve slozce phone provest: chmod 777 a chmod 777 temp/
+4. z root slozky provest: docker cp phone/data.sql c_mysql:/
+5. docker exec c_mysql /bin/sh -c 'mysql -u root -pneconeco123 phoneList_db </data.sql'
